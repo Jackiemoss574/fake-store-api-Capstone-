@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Cappystore</title>
+  <link rel="stylesheet" href="contactus.css">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <header>
+    <!-- Navigation goes here -->
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contactus.html" class="active">Contact Us</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+      
+    <h1>Contact Us</h1>
+    <hr> <!-- Horizontal line -->
+  </header>
+  
+  <main>
+    <p>Have questions or feedback? We're here to help! Just fill out the form below and we'll get back to you as soon as possible.</p>
+    
+    <div class="form-container">
+      <form>
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" placeholder="Last Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="email" name="email" placeholder="Email" required>
+        <select name="common_questions">
+          <option value="shopping_question">I have a shopping question</option>
+          <option value="order_number_question">I have an order number question</option>
+          <option value="different_question">I have a different question</option>
+          <!-- Add more options as needed -->
+        </select>
+        <textarea name="message" placeholder="Your message (max 500 characters)" maxlength="500" required></textarea>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Cappystore. Website made by engineering team.</p>
+    <!-- You can add additional footer content here later on -->
+  </footer>
+  
+  <!-- JavaScript file for navigation -->
+  <script src="navigation.js"></script>
+
+</body>
+</html>
+

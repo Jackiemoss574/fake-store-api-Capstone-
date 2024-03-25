@@ -1,0 +1,32 @@
+main {
+  background-color: #fdf5e6; /* Cream background */
+  color: #8B4513; /* Brown text */
+  padding: 20px;
+  text-align: center; /* Center align text */
+}
+
+/* You can add specific styles for the header and footer to match your theme, similar to the 'Contact Us' page */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a52a2a; /* Warm brown background for footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive styling to ensure content looks good on all devices */
+@media (max-width: 768px) {
+  /* Adjustments for mobile devices */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Adjustments for tablets */
+}
+
+@media (min-width: 1025px) {
+  /* Adjustments for desktop */
+}

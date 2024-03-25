@@ -5,19 +5,26 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.8",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "dom": "^0.0.3",
     "dotenv": "^16.0.0",
     "dotenv-expand": "^8.0.1",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.6",
-    "react-router-dom": "^6.22.3"
+    "react-redux": "^9.1.0",
+    "react-router": "^6.22.3",
+    "react-router-dom": "^6.22.3",
+    "redux": "^5.0.1",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "ejs": "^3.1.6",
