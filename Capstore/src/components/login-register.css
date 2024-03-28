@@ -1,0 +1,46 @@
+/* login-register.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC; /* Cream color */
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #DEB887; /* Light brown */
+    color: #8B4513; /* Brown */
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8B4513; /* Brown */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8B4513; /* Brown */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A0522D; /* Darker brown */
+}
+
+a {
+    color: #8B4513; /* Brown */
+    text-align: center;
+}
+
+/* If you used specific class or id names in your HTML, make sure to use those as your selectors */
