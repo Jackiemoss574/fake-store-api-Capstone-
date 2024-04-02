@@ -1,0 +1,62 @@
+/* Basic Reset */
+body, h1, section, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC; /* Cream color */
+    color: #8B4513; /* Brown */
+    text-align: center; /* Center aligns everything */
+}
+
+header {
+    background-color: #DEB887; /* Light brown */
+    color: #5A3825; /* Darker brown */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+header nav a {
+    color: #5A3825; /* Darker brown */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    padding-top: 60px; /* To ensure content is not hidden behind the fixed header */
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+section {
+    margin: 20px 5%; /* Slight margin for readability */
+    background-color: #FFF8DC; /* A lighter cream */
+    border-radius: 10px; /* Rounded corners for the paragraphs' boxes */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+#shopNowBtn {
+    background-color: #8B4513; /* Brown */
+    color: #FFFFFF; /* White text */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px; /* Plushy rounded button */
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#shopNowBtn:hover {
+    background-color: #A0522D; /* Darker brown on hover */
+}
