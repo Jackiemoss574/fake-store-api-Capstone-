@@ -23,6 +23,20 @@ function fetchProducts() {
         .catch(error => console.error('Error fetching products:', error));
 }
 
+
+products.forEach(product => {
+    productsContainer.innerHTML += `
+        <div class="product">
+            <img src="${product.image}" alt="${product.title}" />
+            <h3>${product.title}</h3>
+            <p>${product.description}</p>
+            <p>Price: $${product.price}</p>
+            <button onclick="addToCart(${product.id})">Add to Cart</button>
+        </div>
+    `;
+});
+
+
 function addToCart(product) {
     // Retrieve the existing cart from local storage or create a new one if it doesn't exist.
     let cart = JSON.parse(localStorage.getItem('cart')) || [];

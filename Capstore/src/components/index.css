@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F5F5DC; /* Cream color as the page background */
+  color: #8B4513; /* Brown color for text */
+  text-align: center;
+}
+
+header {
+  background-color: #DEB887; /* Light brown for the header */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adding shadow for depth */
+  z-index: 100; /* Ensures the header stays above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5A3825; /* Darker brown for navigation links */
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Centering the logo and adjusting its size */
+.logo {
+  height: 50px;
+  margin-left: 20px;
+}
+
+/* Styling for the main content area */
+.main-content {
+  padding: 100px 20px 20px; /* Extra padding at the top to account for fixed header */
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for the welcome message and paragraphs */
+.welcome-message, .about-section {
+  background-color: #FFF8DC; /* A lighter cream for content boxes */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  border-radius: 10px; /* Rounded corners for the content boxes */
+  margin: 20px auto; /* Vertically spaced out, centered horizontally */
+  padding: 20px;
+  max-width: 600px; /* Restricts the width of content boxes */
+}
+
+/* Styling for the 'Shop Now' button */
+.shop-now-btn {
+  display: inline-block;
+  background-color: #8B4513; /* Brown */
+  color: #FFFFFF; /* White text */
+  padding: 10px 30px;
+  border-radius: 25px; /* Rounded edges for the button */
+  margin-top: 20px;
+  text-decoration: none; /* Removes underline from the link */
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Consistent shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.shop-now-btn:hover {
+  background-color: #A0522D; /* Darker brown on hover */
+}
+

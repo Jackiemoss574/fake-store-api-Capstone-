@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Brand Name</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .header, .footer { background-color: #007BFF; color: white; padding: 20px; }
-        .hero-section { background-color: #E9ECEF; padding: 50px 20px; text-align: center; }
-        .featured-products, .about-us, .testimonials { padding: 20px; }
-        .product, .testimonial { margin-bottom: 20px; }
-    </style>
+   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
 <header class="header">
-    <h1>Your Brand Name</h1>
-    <nav>
-        <a href="/shop.html">Shop</a> |
-        <a href="/cart.html">Cart</a> |
-        <a href="about.html">About Us</a> |
+    <h1>Cappy Store</h1>
+    <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Shop</a>
+        <a href="Cart.html">Cart <span id="cartItemCount">0</span></a>
+        <a href="about.html">About</a>
         <a href="login-register.html">Login/Register</a>
     </nav>
     <input type="search" placeholder="Search products">

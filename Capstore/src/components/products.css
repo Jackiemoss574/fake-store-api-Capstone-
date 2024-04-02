@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC; /* Cream color for background */
+}
+
+.site-header {
+    background-color: #DEB887; /* Light brown */
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5A3825; /* Darker brown */
+}
+
+.site-nav a.active {
+    font-weight: bold;
+}
+
+.page-title h1 {
+    text-align: center;
+    margin-top: 60px; /* To ensure it's visible below the fixed header */
+}
+
+.sort-filter-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #8B4513; /* Brown */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A0522D; /* Darker brown */
+}
+
+hr.top-line {
+    margin-top: 20px;
+}
+
+/* Add styles for your product display here */
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: #FFF8DC; /* Light cream background */
+    border: 1px solid #DEB887; /* Light brown border */
+    margin: 10px;
+    padding: 20px;
+    width: 200px; /* Adjust based on your design preference */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: Adds rounded corners to images */
+}
+
+.product h3, .product p {
+    text-align: center;
+}
