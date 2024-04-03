@@ -1,6 +1,7 @@
 // products.js
 document.addEventListener('DOMContentLoaded', fetchProducts);
 
+
 function fetchProducts() {
     fetch('https://fakestoreapi.com/products')
         .then(res => res.json())
@@ -22,6 +23,23 @@ function fetchProducts() {
         })
         .catch(error => console.error('Error fetching products:', error));
 }
+
+products.forEach(product => {
+    productsContainer.innerHTML += `
+        <div class="product">
+            <img src="${product.image}" alt="${product.title}" />
+            <h3>${product.title}</h3>
+            <p class="product-description">${product.description}</p>
+            <p>Price: $${product.price}</p>
+            <div class="quantity-controls">
+                <button onclick="decreaseQuantity(${product.id})">-</button>
+                <span id="quantity-${product.id}">1</span>
+                <button onclick="increaseQuantity(${product.id})">+</button>
+            </div>
+            <button onclick="addToCart(${product.id})">Add to Cart</button>
+        </div>
+    `;
+});
 
 
 products.forEach(product => {

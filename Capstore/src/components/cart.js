@@ -24,8 +24,11 @@ function addToCart(productId) {
 function updateCartIcon() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let itemCount = cart.reduce((total, item) => total + item.quantity, 0);
-    document.getElementById('cartItemCount').innerText = itemCount; // Assuming you have a span with this ID
-}
+    document.getElementById('cartItemCount').innerText = itemCount; 
+    existingProduct.quantity = parseInt(existingProduct.quantity, 10) + 1;
+
+
+    
 <div id="cartIcon" onmouseover="showMiniCart()" onmouseout="hideMiniCart()">
     <span id="cartItemCount">0</span> <!-- Cart item count -->
     <div id="miniCart" style="display: none;"> <!-- Mini cart popup -->
