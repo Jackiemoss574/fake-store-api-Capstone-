@@ -91,3 +91,29 @@ function updateCartIcon() {
 
 // This function can be called during page load to ensure the cart count is accurate.
 document.addEventListener('DOMContentLoaded', updateCartIcon);
+
+// Fetch a limited number of cart items from the API
+function fetchLimitedCartItems(limit) {
+    fetch(`https://fakestoreapi.com/carts?limit=${limit}`)
+        .then(response => response.json())
+        .then(cartItems => {
+            // Process the fetched cart items
+            console.log(cartItems); // Example: Log the cart items to the console
+        })
+        .catch(error => console.error('Error fetching limited cart items:', error));
+}
+
+// Fetch cart items sorted in descending order from the API
+function fetchSortedCartItems() {
+    fetch('https://fakestoreapi.com/carts?sort=desc')
+        .then(response => response.json())
+        .then(cartItems => {
+            // Process the fetched cart items
+            console.log(cartItems); // Example: Log the cart items to the console
+        })
+        .catch(error => console.error('Error fetching sorted cart items:', error));
+}
+
+// Example usage
+fetchLimitedCartItems(5); // Fetch and log only 5 cart items
+fetchSortedCartItems(); // Fetch and log cart items sorted in descending order
