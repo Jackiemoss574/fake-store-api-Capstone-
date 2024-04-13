@@ -26,6 +26,12 @@
     <div id="cartItems" class="cart-items"></div>
     <button id="checkoutButton" class="checkout-btn">Ready to Checkout</button>
 </div>
+<div id="cartIcon" onmouseover="showMiniCart()" onmouseout="hideMiniCart()">
+    <span id="cartItemCount">0</span> <!-- Cart item count -->
+    <div id="miniCart" style="display: none;"> <!-- Mini cart popup -->
+        <!-- Mini cart content will be populated by JavaScript -->
+    </div>
+</div>
 
 <script src="cart.js"></script> 
 </body>

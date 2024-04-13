@@ -7,13 +7,22 @@
 </head>
 <body>
 <header>
-    <nav class="site-nav">
+  <nav class="site-nav">
         <a href="index.html">Home</a>
         <a href="products.html" class="active">Shop</a>
         <a href="Cart.html">Cart <span id="cartItemCount">0</span></a>
         <a href="about.html">About</a>
         <a href="login-register.html">Login/Register</a>
     </nav>
+    <div id="cartIcon" onmouseover="showMiniCart()" onmouseout="hideMiniCart()">
+        <span id="cartItemCount">0</span> <!-- Cart item count -->
+        <div id="miniCart" style="display: none;"> <!-- Mini cart popup -->
+            <!-- Mini cart content will be populated by JavaScript -->
+        </div>
+    </div>
+    
+</header>
+  
 
 <main>
     <h1>Welcome to Cappy Store!</h1>
@@ -28,6 +37,12 @@
     </section>
     <button id="shopNowBtn">Click Here to Shop Now</button>
 </main>
+<div id="cartIcon" onmouseover="showMiniCart()" onmouseout="hideMiniCart()">
+    <span id="cartItemCount">0</span> <!-- Cart item count -->
+    <div id="miniCart" style="display: none;"> <!-- Mini cart popup -->
+        <!-- Mini cart content will be populated by JavaScript -->
+    </div>
+</div>
 
 <script src="about.js"></script> <script src="products.js"></script><script src="login-register.js"></script><script src="cart.js"></script>
 </body>
