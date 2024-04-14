@@ -1,10 +1,11 @@
+<!-- cart.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Cappy store/title>
-    <link rel="stylesheet" href="cart.css"> 
+    <title>Cart | Your Brand Name</title>
+    <link rel="stylesheet" href="cart.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
@@ -19,31 +20,24 @@
 
     <div class="cart-container">
         <div class="navigation">
-            <a href="product-detail.html" class="continue-shopping">Continue Shopping</a>
+            <a href="products.html" class="continue-shopping">Continue Shopping</a>
         </div>
         <h2>Your Cart</h2>
         <hr class="separator">
         <div id="cartItems" class="cart-items">
-            <!-- Cart items will be dynamically added here -->
-            <!-- Example structure for cart item:
-            <div class="cart-item">
-                <img src="product_image_url" alt="Product Image">
+            <!-- Cart items will be dynamically populated here -->
+            <!-- Example item -->
+            <div class="cart-item" data-id="1">
                 <div class="item-details">
                     <h3>Product Name</h3>
-                    <p>Price: $10.00</p>
-                    <div class="quantity-control">
-                        <button class="decrease-btn">-</button>
-                        <span class="quantity">1</span>
-                        <button class="increase-btn">+</button>
-                    </div>
-                    <button class="remove-btn">Remove</button>
+                    <p>Price: $10</p>
+                    <p>Quantity: <button class="decrement-btn">-</button><span class="quantity">1</span><button class="increment-btn">+</button></p>
                 </div>
+                <button class="remove-btn">Remove</button>
             </div>
-            -->
         </div>
         <button id="checkoutButton" class="checkout-btn">Ready to Checkout</button>
     </div>
-    
     <div id="cartIcon" onmouseover="showMiniCart()" onmouseout="hideMiniCart()">
         <span id="cartItemCount">0</span> <!-- Cart item count -->
         <div id="miniCart" style="display: none;"> <!-- Mini cart popup -->
@@ -51,6 +45,6 @@
         </div>
     </div>
 
-    <script src="cart.js"></script> 
+    <script src="cart.js"></script>
 </body>
 </html>

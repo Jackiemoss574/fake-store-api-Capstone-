@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Brand Name</title>
-   <link rel="stylesheet" href="index.css">
+    <title>Cappy Clothing</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
 <header class="header">
-    <h1>Cappy Store</h1>
+    <h1>Cappy Clothing</h1>
     <nav class="site-nav">
         <a href="index.html">Home</a>
-        <a href="products.html" class="active">Shop</a>
-        <a href="Cart.html">Cart <span id="cartItemCount">0</span></a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart <span id="cartItemCount">0</span></a>
         <a href="about.html">About</a>
         <a href="login-register.html">Login/Register</a>
     </nav>
     <input type="search" placeholder="Search products">
     
     <div id="cartIcon" onmouseover="showMiniCart()" onmouseout="hideMiniCart()">
-    <span id="cartItemCount">0</span> <!-- Cart item count -->
-    <div id="miniCart" style="display: none;"> <!-- Mini cart popup -->
-        <!-- Mini cart content will be populated by JavaScript -->
+        <span id="cartItemCount">0</span> <!-- Cart item count -->
+        <div id="miniCart" style="display: none;"> <!-- Mini cart popup -->
+            <!-- Mini cart content will be populated by JavaScript -->
+        </div>
     </div>
-</div>
-
 </header>
 
 <section class="hero-section">
     <h2>Welcome to Our Store</h2>
     <p>Find the best products for your needs.</p>
-    <button onclick="location.href='/shop.html'">Shop Now</button>
+    <button onclick="location.href='/products.html'">Shop Now</button>
 </section>
 
 <section class="featured-products">
@@ -40,32 +39,25 @@
         <img src="product1.jpg" alt="Product 1" style="width:100%;">
         <p>Product 1 <br> $20.00</p>
     </div>
-    <!-- Repeat for other products -->
-</section>
-
-<section class="about-us">
-    <h3>About Us</h3>
-    <p>A brief introduction about your store.</p>
-    <a href="/about.html">Learn More</a>
-</section>
-
-<section class="testimonials">
-    <h3>Testimonials</h3>
-    <div class="testimonial">
-        <p>"This store offers great products and excellent customer service!" - Customer A</p>
-    </div>
-    <!-- Repeat for other testimonials -->
+    <!-- Repeat for other featured products -->
 </section>
 
 <footer class="footer">
-    <p>Contact us at support@yourbrand.com</p>
-    <p>Follow us on <a href="#">Social Media</a></p>
-    <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
-    <form>
-        <input type="email" placeholder="Your email for newsletter">
-        <button type="submit">Subscribe</button>
-    </form>
+    <div class="newsletter">
+        <h4>Subscribe for the Newsletter</h4>
+        <form>
+            <input type="email" placeholder="Your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <div class="footer-links">
+        <a href="#">Follow us on Social Media</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+    <p>&copy; 2024 Cappy Clothing. All rights reserved.</p>
 </footer>
-<script></script>
+
+<script src="login-register.js"></script><script src="login-register.js"></script>
 </body>
 </html>
