@@ -1,5 +1,5 @@
 function addToCart(productId) {
-    fetch(`https://example.com/api/products/${productId}`)
+    fetch(`https://fakestoreapi.com/products/${productId}`)
         .then(response => response.json())
         .then(product => {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -10,7 +10,7 @@ function addToCart(productId) {
             } else {
                 cart.push({
                     productId: product.id,
-                    productName: product.name,
+                    productName: product.title,
                     price: product.price,
                     quantity: 1
                 });
@@ -18,8 +18,19 @@ function addToCart(productId) {
 
             localStorage.setItem('cart', JSON.stringify(cart));
             updateCartIcon(); // Update cart icon count
+            showMiniCart(); // Show mini cart
         });
 }
+
+fetch('https://fakestoreapi.com/carts')
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(error => console.error('Error fetching carts:', error));
+
+fetch('https://fakestoreapi.com/carts/5')
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(error => console.error('Error fetching cart:', error));
 
 function updateCartIcon() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
